@@ -1,6 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: black;
+  background:
+    radial-gradient(circle at top, #111827, #05050a);
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  color: #00ffcc;
+  font-size: 28px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+/* HERO */
+.hero {
   text-align: center;
-  font-family: Arial;
+  padding: 70px 20px;
+}
+
+.hero-banner {
+  width: 100%;
+  max-width: 850px;
+
+  border-radius: 20px;
+
+  margin-bottom: 40px;
+
+  box-shadow:
+    0 0 30px rgba(0,255,204,0.15);
+}
+
+.hero h1 {
+  font-size: 58px;
+  color: #00ffcc;
+}
+
+.hero p {
+  margin-top: 20px;
+
+  color: #aaa;
+
+  font-size: 20px;
+
+  max-width: 700px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 30px;
+
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(90deg, #00ffcc, #7a5cff);
+
+  color: black;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 0 20px rgba(0,255,204,0.35);
+}
+
+/* CARD */
+.card {
+  max-width: 700px;
+
+  margin: 60px auto;
+
+  padding: 30px;
+
+  background:
+    rgba(255,255,255,0.05);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.card h2 {
+  color: #00ffcc;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #bbb;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+
+  padding: 40px;
+
+  color: #666;
 }
